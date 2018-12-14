@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, jsonify
 from genTweet import TweetGenerator
+import pickle
 from markov import markovChain, sentenceStarters
 
 app = Flask(__name__)
